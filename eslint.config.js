@@ -15,6 +15,7 @@ export default defineConfig([
       reactHooks.configs.flat.recommended,
       reactRefresh.configs.vite,
     ],
+    "react/prop-types": "off",
     languageOptions: {
       globals: globals.browser,
     },

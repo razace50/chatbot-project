@@ -2,6 +2,7 @@ import ChatbotIcon from "./components/ChatbotIcon"
 import ChatForm from "./components/ChatForm";
 
 const App = () => {
+  const [chatHistory, setChatHistory] = React.useState([]);
   return (
     <div className="container">
       <div className="chatbot-popup">
@@ -29,7 +30,7 @@ keyboard_arrow_down
           </div>
           {/* Chatbot footer */}
           <div className="chat-footer">
-<ChatForm/>
+<ChatForm setChatHistory={setChatHistory} />
           </div>
       </div>
       
